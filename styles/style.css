@@ -84,6 +84,15 @@ content {
     width: 80%;
 }
 
+.pokemon-img {
+    display: inline;
+    height: 100px;
+    width: 100px;
+}
+#poke-results {
+    display: flex;
+    color: red;
+}
 p {
     margin: var(--gutter);
 }
