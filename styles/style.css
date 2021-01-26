@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: royalblue;
 }
 
 main {
@@ -86,12 +86,23 @@ content {
 
 .pokemon-img {
     display: inline;
+
     height: 100px;
     width: 100px;
 }
+
+td {
+
+    height: 110px;
+    width: 110px;
+    text-align: center;
+}
+
+
+
 #poke-results {
     display: flex;
-    color: red;
+    color: yellow;
 }
 p {
     margin: var(--gutter);
