@@ -18,10 +18,9 @@ export function setPokeRecords(newRecord) {
 
 export function incrementEncountered(species_id) {
     const record = getPokeRecords();
+    const pokeRecord = findBySpeciesId(record, species_id);
 
-    const pokemon = findBySpeciesId(record, species_id);
-
-    if (!pokemon) {
+    if (!pokeRecord) {
         const newRecord = {
             species_id: species_id,
             Encountered: 1,
@@ -29,7 +28,7 @@ export function incrementEncountered(species_id) {
         };
         record.push(newRecord);
     } else {
-        pokemon.Encountered++;
+        pokeRecord.Encountered++;
     }
 
     setPokeRecords(record);

@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: royalblue;
+    background-color: whitesmoke;
 }
 
 main {
@@ -102,7 +102,7 @@ td {
 
 #poke-results {
     display: flex;
-    color: yellow;
+    color: black;
 }
 p {
     margin: var(--gutter);

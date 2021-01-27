@@ -1,6 +1,6 @@
 
 import { pokemon } from './Pokedata.js';
-import { incrementEncountered, incrementCaptured } from './localstorageutils.js';
+import { incrementEncountered, incrementCaptured, } from './localstorageutils.js';
 
 let battles = 0;
 
@@ -37,6 +37,7 @@ export function setThreePokemon() {
     incrementEncountered(pokeOne.species_id);
     incrementEncountered(pokeTwo.species_id);
     incrementEncountered(pokeThree.species_id);
+
 
     const div = document.getElementById('pokemon');
 
