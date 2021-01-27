@@ -9,7 +9,7 @@ const pokeGetResults = getPokeRecords();
 var chart = new Chart(ctx, { // eslint-disable-line
     type: 'bar',
     data: {
-        labels: makeLabelsArray(pokeGetResults), // LABELS ARRAY GOES HERE
+        labels: makeLabelsArray(pokeGetResults, pokemon), // LABELS ARRAY GOES HERE
         datasets: [
             {
                 label: '# of times seen',

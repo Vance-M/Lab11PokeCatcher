@@ -1,4 +1,4 @@
-
+import { findBySpeciesId } from '../utils.js';
 export function makeEncounteredArray(arrayOfObjects) {
     const encounteredArray = [];
     for (let item of arrayOfObjects) {
@@ -17,10 +17,12 @@ export function makeCapturedArray(arrayOfObjects) {
 }
 
 
-export function makeLabelsArray(arrayOfObjects) {
+export function makeLabelsArray(arrayOfObjects, pokemon) {
+
     const nameArray = [];
     for (let item of arrayOfObjects) {
-        nameArray.push(item.species_id);
+        const pokeName = findBySpeciesId(pokemon, item.species_id);
+        nameArray.push(pokeName.pokemon);
     }
     return nameArray;
 }
